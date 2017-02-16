@@ -2,7 +2,7 @@
 
 <h1>Microposts</h1>
 
-<table>
+<table class="table table-responsive">
   <thead>
     <tr>
       <th>Content</th>
@@ -18,7 +18,7 @@
         <td><%= micropost.user_id %></td>
         <td><%= link_to 'Show', micropost %></td>
         <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
-        <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', micropost, :class => "btn btn-danger" ,method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

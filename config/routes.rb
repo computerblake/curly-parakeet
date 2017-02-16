@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/Home'
+
   resources :microposts
   resources :users
   
